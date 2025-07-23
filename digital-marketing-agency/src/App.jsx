@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import HeroSection from './components/HeroSection'
+import PortfolioPreview from './components/PortfolioPreview'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <div>
         <HeroSection />
+        <PortfolioPreview />
       </div>
     </>
   );
