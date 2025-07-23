@@ -25,7 +25,7 @@ const HeroSection = () => (
       animate="show"
     >
       <motion.h1
-        className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-lg"
+        className="font-montserrat text-4xl md:text-6xl leading-tight drop-shadow-lg"
         variants={item}
       >
         Elevate Your Brand with{" "}
