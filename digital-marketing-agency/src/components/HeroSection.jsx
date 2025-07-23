@@ -17,7 +17,7 @@ const item = {
 };
 
 const HeroSection = () => (
-  <section className="bg-gradient-to-br from-blue-950 via-blue-600 to-blue-900 text-white min-h-[70vh] flex items-center justify-center px-4 font-sans">
+  <section className="bg-gradient-to-br from-blue-950 via-blue-600 to-blue-900 text-white min-h-[70vh] flex flex-col items-center justify-center px-4 font-sans relative">
     <motion.div
       className="max-w-3xl w-full text-center space-y-8"
       variants={container}
@@ -47,6 +47,30 @@ const HeroSection = () => (
       >
         Get Started Today
       </motion.a>
+    </motion.div>
+    {/* Animated Scroll Cue */}
+    <motion.div
+      className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: [0, 16, 0] }}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: "loop",
+        ease: "easeInOut",
+      }}
+    >
+      <a href="#portfolio-preview" aria-label="Scroll to portfolio preview">
+        <svg
+          className="w-8 h-8 text-blue-100"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={3}
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
     </motion.div>
   </section>
 );
