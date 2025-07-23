@@ -48,6 +48,10 @@ const HeroSection = () => (
         Get Started Today
       </motion.a>
     </motion.div>
+    {/* Secondary Call To Action */}
+    <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-xs md:text-sm text-white opacity-80 font-medium pointer-events-none select-none z-10">
+      Check Out Our Work
+    </div>
     {/* Animated Scroll Cue */}
     <motion.div
       className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
