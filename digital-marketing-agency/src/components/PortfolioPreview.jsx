@@ -34,7 +34,7 @@ const PortfolioPreview = () => {
   return (
     <section
       id="portfolio-preview"
-      className="w-full py-24 px-4 flex flex-col items-center justify-center bg-gradient-to-br from-blue-800 via-indigo-800 via-violet-800 via-purple-800 to-fuchsia-800"
+      className="w-full min-h-[90vh] py-24 px-4 flex flex-col items-center justify-center bg-gradient-to-br from-blue-800 via-indigo-800 via-violet-800 via-purple-800 to-fuchsia-800"
     >
       <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 text-center drop-shadow-lg">
         Portfolio Preview
