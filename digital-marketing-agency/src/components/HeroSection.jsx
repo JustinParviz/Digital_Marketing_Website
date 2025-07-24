@@ -17,7 +17,7 @@ const item = {
 };
 
 const HeroSection = () => (
-  <section className="bg-gradient-to-br from-blue-950 via-blue-600 to-blue-900 text-white min-h-[70vh] flex flex-col items-center justify-center px-4 font-sans relative">
+  <section className="bg-gradient-to-br from-blue-950 via-blue-600 to-blue-900 text-white min-h-[90vh] flex flex-col items-center justify-center px-4 font-sans relative">
     <motion.div
       className="max-w-3xl w-full text-center space-y-8"
       variants={container}
